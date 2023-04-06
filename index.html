@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary bg-supportingLight px-2">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand text-secondary fw-bold fs-1" href="#"
+          >Catty<span class="fw-bolder text-primary">.</span></a
+        >
+
+        <!-- Toggle navbar -->
+        <div>
+          <!-- Toggle navbar btn -->
+          <a
+            class="fs-3 text-secondary fw-bolder"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <i class="bi bi-list"></i>
+          </a>
+          <!-- Navbar offcanvas -->
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title text-secondary fw-bold fs-1"
+                id="offcanvasExampleLabel"
+              >
+                Catty<span class="fw-bolder text-primary">.</span>
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-semibold">
+                <li class="nav-item">
+                  <a class="nav-link text-primary" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" href="#services"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" href="#works">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="btn btn-primary rounded-pill text-supportingLighter fs-6"
+                    href="#"
+                    >Hire Me</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro -->
+    <section class="bg-supportingLight pt-5 px-2">
+      <div class="container-xl">
+        <div>
+          <span class="text-primary fw-bold fs-4">Hi, Im</span>
+          <h1 class="text-secondary fw-bolder display-0">Mary Hardy</h1>
+          <span class="text-secondary fw-bold fs-4 my-3"
+            >Digital Marketing Expert</span
+          >
+          <p class="text-primary-emphasis my-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            at quis accusamus explicabo minus unde veritatis nostrum voluptatum
+            ad, in cupiditate optio.
+          </p>
+        </div>
+        <div class="pt-4 pb-2">
+          <a href="#" class="btn btn-primary me-2 text-supportingLighter"
+            >Download CV</a
+          >
+          <a href="#contact" class="btn btn-outline-primary">Conatct</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- experiences -->
+    <section class="container-xl my-5">
+      <!-- Pills -->
+      <div>
+        <!-- Pill #1 -->
+        <div
+          class="bg-white rounded-pill shadow-sm d-flex align-items-center gap-2 px-3 py-2 mx-2 my-3"
+        >
+          <div>
+            <i class="bi bi-check-circle-fill display-0 text-primary"></i>
+          </div>
+          <div>
+            <h5 class="text-secondary fw-bolder fs-2">8 years job</h5>
+            <span class="text-primary fw-semibold fs-6">Experience</span>
+          </div>
+        </div>
+
+        <!-- Pill #2 -->
+        <div
+          class="bg-white rounded-pill shadow-sm d-flex align-items-center gap-2 px-3 py-2 mx-2 my-3"
+        >
+          <div>
+            <i class="bi bi-check-circle-fill display-0 text-primary"></i>
+          </div>
+          <div>
+            <h5 class="text-secondary fw-bolder fs-2">8 years job</h5>
+            <span class="text-primary fw-semibold fs-6">Experience</span>
+          </div>
+        </div>
+
+        <!-- Pill #3 -->
+        <div
+          class="bg-white rounded-pill shadow-sm d-flex align-items-center gap-2 px-3 py-2 mx-2 my-3"
+        >
+          <div>
+            <i class="bi bi-check-circle-fill display-0 text-primary"></i>
+          </div>
+          <div>
+            <h5 class="text-secondary fw-bolder fs-2">8 years job</h5>
+            <span class="text-primary fw-semibold fs-6">Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container-xl">
+      <h4 class="text-primary">Services</h4>
+      <p class="text-secondary fs-2 fw-bold">
+        I Provide Wide range Of Digital Services
+      </p>
+    </section>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
