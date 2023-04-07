@@ -10,6 +10,7 @@ $secondary: #15295f;
 $custom-theme-colors: (
   "supportingLighter": #fdf8f7,
   "supportingLight": #fdf8f7,
+  "supporting": #ff4e6e,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
@@ -30,3 +31,38 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn-circle {
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: $primary;
+  color: white;
+}
+
+// Carousel
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-disabled {
+  background: #e2e1e1;
+  color: #777676;
+}
