@@ -11,6 +11,8 @@ $custom-theme-colors: (
   "supportingLighter": #fdf8f7,
   "supportingLight": #fdf8f7,
   "supporting": #ff4e6e,
+  "supportingDark": #1f1d2b,
+  "star": $yellow-500,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
@@ -24,6 +26,8 @@ $btn-border-width: 2px;
 // custom display font sizes
 $custom-display-font-sizes: (
   0: 7rem,
+  7: 2rem,
+  8: 1.5rem,
 );
 
 // merge the maps to add new theme colors
@@ -32,12 +36,13 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.btn-circle {
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  background: $primary;
-  color: white;
+.shadow-custom {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.sw-btn-next > svg,
+.sw-btn-prev > svg {
+  color: $primary;
 }
 
 // Carousel
@@ -47,22 +52,33 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  // text-align: center;
+  // font-size: 18px;
+  // background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+.swiper-button-disabled > svg {
+  color: #c3c1c1;
 }
 
-.swiper-button-disabled {
-  background: #e2e1e1;
-  color: #777676;
+.circle-img-thumbnail {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  // object-fit: cover;
+}
+
+.form-control {
+  border-radius: 0;
+  border: 2px solid rgb(190, 190, 190, 0.2);
 }
