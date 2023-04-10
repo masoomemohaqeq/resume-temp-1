@@ -23,75 +23,107 @@
   </head>
   <body class="bg-white">
     <!-- Navbar -->
-    <nav class="navbar bg-body-tertiary bg-supportingLight px-2">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand text-secondary fw-bold fs-1" href="#"
-          >Catty<span class="fw-bolder text-primary">.</span></a
-        >
-
-        <!-- Toggle navbar -->
-        <div>
-          <!-- Toggle navbar btn -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-supportingLight px-2"
+    >
+      <div class="container-xxl">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <!-- Logo -->
+          <a class="navbar-brand text-secondary fw-bold fs-1" href="#"
+            >Catty<span class="fw-bolder text-primary">.</span></a
+          >
+          <div class="d-none d-lg-block ms-auto me-0 mx-xl-auto">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-secondary px-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
           <a
-            class="fs-3 text-secondary fw-bolder"
-            data-bs-toggle="offcanvas"
-            href="#offcanvasExample"
-            role="button"
-            aria-controls="offcanvasExample"
+            href="#"
+            class="btn btn-primary text-supportingLighter d-none d-lg-block"
+            >Hire Me</a
           >
-            <i class="bi bi-list"></i>
-          </a>
-          <!-- Navbar offcanvas -->
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-          >
-            <div class="offcanvas-header">
-              <h5
-                class="offcanvas-title text-secondary fw-bold fs-1"
-                id="offcanvasExampleLabel"
-              >
-                Catty<span class="fw-bolder text-primary">.</span>
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-semibold">
-                <li class="nav-item">
-                  <a class="nav-link text-primary" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-secondary" href="#services"
-                    >Services</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-secondary" href="#works">Works</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-secondary" href="#blog">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-secondary" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="btn btn-primary rounded-pill text-supportingLighter fs-6"
-                    href="#"
-                    >Hire Me</a
-                  >
-                </li>
-              </ul>
+          <!-- Toggle navbar -->
+          <div class="d-lg-none">
+            <!-- Toggle navbar btn -->
+            <a
+              class="fs-3 text-secondary fw-bolder"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <i class="bi bi-list"></i>
+            </a>
+            <!-- Navbar offcanvas -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title text-secondary fw-bold fs-1"
+                  id="offcanvasExampleLabel"
+                >
+                  Catty<span class="fw-bolder text-primary">.</span>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-semibold">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-primary"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#services"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#works">Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#contact"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="btn btn-primary rounded-pill text-supportingLighter fs-6"
+                      href="#"
+                      >Hire Me</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -99,238 +131,250 @@
     </nav>
 
     <!-- Intro -->
-    <section class="bg-supportingLight container-xl">
-      <div class="row pt-5 px-2">
-        <div class="col-sm-12 col-md-7 my-4">
-          <div>
-            <span class="text-primary fw-bold fs-4">Hi, Im</span>
-            <h1 class="text-secondary fw-bolder display-3">Mary Hardy</h1>
-            <span class="text-secondary fw-bold fs-4 my-3"
-              >Digital Marketing Expert</span
-            >
-            <p class="text-primary-emphasis my-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              at quis accusamus explicabo minus unde veritatis nostrum
-              voluptatum ad, in cupiditate optio.
-            </p>
+    <section class="bg-supportingLight">
+      <div class="container-xxl">
+        <div class="row pt-5 px-2">
+          <div class="col-sm-12 col-md-7 col-xl-6 my-4 py-xl-7">
+            <div>
+              <span class="text-primary fw-bold fs-4">Hi, Im</span>
+              <h1 class="text-secondary fw-bolder display-3">Mary Hardy</h1>
+              <span class="text-secondary fw-bold fs-4 my-3"
+                >Digital Marketing Expert</span
+              >
+              <p class="text-primary-emphasis my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore at quis accusamus explicabo minus unde veritatis
+                nostrum voluptatum ad, in cupiditate optio.
+              </p>
+            </div>
+            <div class="pt-4 pb-2">
+              <a href="#" class="btn btn-primary me-2 text-supportingLighter"
+                >Download CV</a
+              >
+              <a href="#contact" class="btn btn-outline-primary">Contact</a>
+            </div>
           </div>
-          <div class="pt-4 pb-2">
-            <a href="#" class="btn btn-primary me-2 text-supportingLighter"
-              >Download CV</a
-            >
-            <a href="#contact" class="btn btn-outline-primary">Conatct</a>
+          <div class="d-none d-md-block col-md-5 col-xl-6 position-relative">
+            <img
+              src="/images/hero-person-img.png"
+              class="img-fluid position-absolute bottom-0"
+              alt=""
+            />
           </div>
-        </div>
-        <div class="d-none d-md-block col-md-5 position-relative">
-          <img
-            src="/images/hero-person-img.png"
-            class="img-fluid position-absolute bottom-0"
-            alt=""
-          />
         </div>
       </div>
     </section>
 
     <!-- experiences -->
-    <section class="container-xl my-5">
-      <!-- Pills -->
-      <div class="d-md-flex">
-        <!-- Pill #1 -->
-        <div
-          class="bg-white rounded-pill-sm rounded-start-pill-md shadow-sm shadow-md-none d-flex align-items-center flex-md-column equal-flex-items gap-2 px-sm-3 px-md-0 py-2 mx-sm-2 mx-md-0 my-3"
-        >
-          <div>
-            <i class="bi bi-check-circle-fill display-0 text-primary"></i>
+    <section class="my-5">
+      <div class="container-xxl">
+        <!-- Pills -->
+        <div class="d-md-flex position-relative -mt-8">
+          <!-- Pill #1 -->
+          <div
+            class="bg-white rounded-pill-sm rounded-start-pill-md shadow-sm shadow-md-none d-flex align-items-center flex-md-column flex-lg-row equal-flex-items gap-2 px-3 px-md-0 px-lg-4 py-2 mx-2 mx-md-0 my-3"
+          >
+            <div>
+              <i class="bi bi-check-circle-fill display-1 text-primary"></i>
+            </div>
+            <div class="text-md-center">
+              <h5 class="text-secondary fw-bolder fs-3">8 Years job</h5>
+              <span class="text-primary fw-semibold fs-6">Experience</span>
+            </div>
           </div>
-          <div class="text-md-center">
-            <h5 class="text-secondary fw-bolder fs-2">8 Years job</h5>
-            <span class="text-primary fw-semibold fs-6">Experience</span>
-          </div>
-        </div>
 
-        <!-- Pill #2 -->
-        <div
-          class="bg-white rounded-pill-sm shadow-sm d-flex align-items-center flex-md-column equal-flex-items gap-2 px-sm-3 px-md-0 py-2 mx-sm-2 mx-md-0 my-3"
-        >
-          <div>
-            <i class="bi bi-check-circle-fill display-0 text-primary"></i>
+          <!-- Pill #2 -->
+          <div
+            class="bg-white rounded-pill-sm rounded-0-md shadow-sm shadow-md-none d-flex align-items-center flex-md-column flex-lg-row equal-flex-items gap-2 px-3 px-md-0 px-lg-4 py-2 mx-2 mx-md-0 my-3"
+          >
+            <div>
+              <i class="bi bi-check-circle-fill display-1 text-primary"></i>
+            </div>
+            <div class="text-md-center">
+              <h5 class="text-secondary fw-bolder fs-3">8 Years job</h5>
+              <span class="text-primary fw-semibold fs-6">Experience</span>
+            </div>
           </div>
-          <div class="text-md-center">
-            <h5 class="text-secondary fw-bolder fs-2">500+ Projects</h5>
-            <span class="text-primary fw-semibold fs-6">Completed</span>
-          </div>
-        </div>
 
-        <!-- Pill #3 -->
-        <div
-          class="bg-white rounded-pill-sm rounded-end-pill-md shadow-sm d-flex align-items-center flex-md-column equal-flex-items gap-2 px-sm-3 px-md-0 py-2 mx-sm-2 mx-md-0 my-3"
-        >
-          <div>
-            <i class="bi bi-check-circle-fill display-0 text-primary"></i>
-          </div>
-          <div class="text-md-center">
-            <h5 class="text-secondary fw-bolder fs-2">Support</h5>
-            <span class="text-primary fw-semibold fs-6">Online 24/7</span>
+          <!-- Pill #3 -->
+          <div
+            class="bg-white rounded-pill-sm rounded-end-pill-md shadow-sm shadow-md-none d-flex align-items-center flex-md-column flex-lg-row equal-flex-items gap-2 px-3 px-md-0 px-lg-4 py-2 mx-2 mx-md-0 my-3"
+          >
+            <div>
+              <i class="bi bi-check-circle-fill display-1 text-primary"></i>
+            </div>
+            <div class="text-md-center">
+              <h5 class="text-secondary fw-bolder fs-3">8 Years job</h5>
+              <span class="text-primary fw-semibold fs-6">Experience</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Services -->
-    <section id="services" class="container-xl">
-      <div class="swiper mySwiper p-2">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <div>
-            <h4 class="text-primary">Services</h4>
-            <p class="text-secondary fs-2 fw-bold">
-              I Provide Wide range Of Digital Services
-            </p>
-          </div>
-          <div class="">
-            <div class="sw-btn-prev d-inline-block me-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-arrow-left-circle-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
-                />
-              </svg>
+    <section id="services" class="container-xxl">
+      <div class="row my-6">
+        <div class="col-lg-3">
+          <div
+            class="d-md-flex justify-content-md-between align-items-md-center align-items-lg-start justify-content-lg-center flex-lg-column h-100"
+          >
+            <div class="">
+              <h4 class="text-primary">Services</h4>
+              <p class="text-secondary fs-2 fw-bold">
+                I Provide Wide range Of Digital Services
+              </p>
             </div>
-            <div class="sw-btn-next d-inline-block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-arrow-right-circle-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-                />
-              </svg>
+            <div class="">
+              <div class="sw-btn-prev d-inline-block me-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-arrow-left-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+                  />
+                </svg>
+              </div>
+              <div class="sw-btn-next d-inline-block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
-        <div class="swiper-wrapper my-5">
-          <div class="swiper-slide shadow-custom">
-            <div class="text-center px-2 py-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="80"
-                fill="currentColor"
-                class="bi bi-check-circle-fill text-supporting py-2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                />
-              </svg>
-              <div class="text-secondary fw-bold m-0 py-2">
-                Digital Marketing
+        <div class="col-lg-9">
+          <div class="swiper servicesSwiper p-2">
+            <div class="swiper-wrapper my-5">
+              <div class="swiper-slide shadow-custom">
+                <div class="text-center px-2 py-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    fill="currentColor"
+                    class="bi bi-check-circle-fill text-supporting py-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                    />
+                  </svg>
+                  <div class="text-secondary fw-bold m-0 py-2">
+                    Digital Marketing
+                  </div>
+                  <p class="text-primary-emphasis m-0 py-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, quo!
+                  </p>
+                </div>
               </div>
-              <p class="text-primary-emphasis m-0 py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente, quo!
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide shadow-custom">
-            <div class="text-center px-2 py-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="80"
-                fill="currentColor"
-                class="bi bi-check-circle-fill text-supporting py-2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                />
-              </svg>
-              <div class="text-secondary fw-bold m-0 py-2">
-                Digital Marketing
+              <div class="swiper-slide shadow-custom">
+                <div class="text-center px-2 py-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    fill="currentColor"
+                    class="bi bi-check-circle-fill text-supporting py-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                    />
+                  </svg>
+                  <div class="text-secondary fw-bold m-0 py-2">
+                    Digital Marketing
+                  </div>
+                  <p class="text-primary-emphasis m-0 py-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, quo!
+                  </p>
+                </div>
               </div>
-              <p class="text-primary-emphasis m-0 py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente, quo!
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide shadow-custom">
-            <div class="text-center px-2 py-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="80"
-                fill="currentColor"
-                class="bi bi-check-circle-fill text-supporting py-2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                />
-              </svg>
-              <div class="text-secondary fw-bold m-0 py-2">
-                Digital Marketing
+              <div class="swiper-slide shadow-custom">
+                <div class="text-center px-2 py-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    fill="currentColor"
+                    class="bi bi-check-circle-fill text-supporting py-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                    />
+                  </svg>
+                  <div class="text-secondary fw-bold m-0 py-2">
+                    Digital Marketing
+                  </div>
+                  <p class="text-primary-emphasis m-0 py-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, quo!
+                  </p>
+                </div>
               </div>
-              <p class="text-primary-emphasis m-0 py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente, quo!
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide shadow-custom">
-            <div class="text-center px-2 py-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="80"
-                fill="currentColor"
-                class="bi bi-check-circle-fill text-supporting py-2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                />
-              </svg>
-              <div class="text-secondary fw-bold m-0 py-2">
-                Digital Marketing
+              <div class="swiper-slide shadow-custom">
+                <div class="text-center px-2 py-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    fill="currentColor"
+                    class="bi bi-check-circle-fill text-supporting py-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                    />
+                  </svg>
+                  <div class="text-secondary fw-bold m-0 py-2">
+                    Digital Marketing
+                  </div>
+                  <p class="text-primary-emphasis m-0 py-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, quo!
+                  </p>
+                </div>
               </div>
-              <p class="text-primary-emphasis m-0 py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente, quo!
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide shadow-custom">
-            <div class="text-center px-2 py-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="80"
-                fill="currentColor"
-                class="bi bi-check-circle-fill text-supporting py-2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                />
-              </svg>
-              <div class="text-secondary fw-bold m-0 py-2">
-                Digital Marketing
+              <div class="swiper-slide shadow-custom">
+                <div class="text-center px-2 py-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    fill="currentColor"
+                    class="bi bi-check-circle-fill text-supporting py-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                    />
+                  </svg>
+                  <div class="text-secondary fw-bold m-0 py-2">
+                    Digital Marketing
+                  </div>
+                  <p class="text-primary-emphasis m-0 py-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, quo!
+                  </p>
+                </div>
               </div>
-              <p class="text-primary-emphasis m-0 py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente, quo!
-              </p>
             </div>
           </div>
         </div>
@@ -338,198 +382,200 @@
     </section>
 
     <!-- Why Choose Me -->
-    <section id="why" class="bg-supportingLighter container-xl">
-      <div class="py-5 px-2">
-        <!-- Heading -->
-        <div class="text-center">
-          <div class="text-primary display-8 fw-semibold">Why Choose Me</div>
-          <div class="text-secondary fs-2 fw-bold display-8">
-            My Experience Area
-          </div>
-        </div>
-        <!-- Progress Bars -->
-        <div class="my-4 row">
-          <!-- Progress Bars #1 -->
-          <div class="py-2 col-md-6">
-            <div
-              class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-            >
-              <span>Facebook marketing</span> <span>90%</span>
+    <section id="why" class="bg-supportingLighter">
+      <div class="container-xxl">
+        <div class="py-5 px-2">
+          <!-- Heading -->
+          <div class="text-center">
+            <div class="text-primary display-8 fw-semibold">Why Choose Me</div>
+            <div class="text-secondary fs-2 fw-bold display-8">
+              My Experience Area
             </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Warning example"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 10px"
-            >
+          </div>
+          <!-- Progress Bars -->
+          <div class="my-4 row">
+            <!-- Progress Bars #1 -->
+            <div class="py-2 col-md-6">
               <div
-                class="progress-bar text-bg-primary"
-                style="width: 90%"
-              ></div>
+                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+              >
+                <span>Facebook marketing</span> <span>90%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Warning example"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 10px"
+              >
+                <div
+                  class="progress-bar text-bg-primary"
+                  style="width: 90%"
+                ></div>
+              </div>
             </div>
-          </div>
 
-          <!-- Progress Bars #2 -->
-          <div class="py-2 col-md-6">
-            <div
-              class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-            >
-              <span>Affilate marketing</span> <span>50%</span>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Warning example"
-              aria-valuenow="50"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 10px"
-            >
+            <!-- Progress Bars #2 -->
+            <div class="py-2 col-md-6">
               <div
-                class="progress-bar text-bg-primary"
-                style="width: 50%"
-              ></div>
+                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+              >
+                <span>Affilate marketing</span> <span>50%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Warning example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 10px"
+              >
+                <div
+                  class="progress-bar text-bg-primary"
+                  style="width: 50%"
+                ></div>
+              </div>
             </div>
-          </div>
 
-          <!-- Progress Bars #3 -->
-          <div class="py-2 col-md-6">
-            <div
-              class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-            >
-              <span>Facebook marketing</span> <span>90%</span>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Warning example"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 10px"
-            >
+            <!-- Progress Bars #3 -->
+            <div class="py-2 col-md-6">
               <div
-                class="progress-bar text-bg-primary"
-                style="width: 90%"
-              ></div>
+                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+              >
+                <span>Facebook marketing</span> <span>90%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Warning example"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 10px"
+              >
+                <div
+                  class="progress-bar text-bg-primary"
+                  style="width: 90%"
+                ></div>
+              </div>
             </div>
-          </div>
 
-          <!-- Progress Bars #4 -->
-          <div class="py-2 col-md-6">
-            <div
-              class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-            >
-              <span>Affilate marketing</span> <span>80%</span>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Warning example"
-              aria-valuenow="80"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 10px"
-            >
+            <!-- Progress Bars #4 -->
+            <div class="py-2 col-md-6">
               <div
-                class="progress-bar text-bg-primary"
-                style="width: 80%"
-              ></div>
+                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+              >
+                <span>Affilate marketing</span> <span>80%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Warning example"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 10px"
+              >
+                <div
+                  class="progress-bar text-bg-primary"
+                  style="width: 80%"
+                ></div>
+              </div>
             </div>
-          </div>
 
-          <!-- Progress Bars #1 -->
-          <div class="py-2 col-md-6">
-            <div
-              class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-            >
-              <span>Facebook marketing</span> <span>90%</span>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Warning example"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 10px"
-            >
+            <!-- Progress Bars #1 -->
+            <div class="py-2 col-md-6">
               <div
-                class="progress-bar text-bg-primary"
-                style="width: 90%"
-              ></div>
+                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+              >
+                <span>Facebook marketing</span> <span>90%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Warning example"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 10px"
+              >
+                <div
+                  class="progress-bar text-bg-primary"
+                  style="width: 90%"
+                ></div>
+              </div>
             </div>
-          </div>
 
-          <!-- Progress Bars #2 -->
-          <div class="py-2 col-md-6">
-            <div
-              class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-            >
-              <span>Affilate marketing</span> <span>50%</span>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Warning example"
-              aria-valuenow="50"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 10px"
-            >
+            <!-- Progress Bars #2 -->
+            <div class="py-2 col-md-6">
               <div
-                class="progress-bar text-bg-primary"
-                style="width: 50%"
-              ></div>
+                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+              >
+                <span>Affilate marketing</span> <span>50%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Warning example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 10px"
+              >
+                <div
+                  class="progress-bar text-bg-primary"
+                  style="width: 50%"
+                ></div>
+              </div>
             </div>
-          </div>
 
-          <!-- Progress Bars #3 -->
-          <div class="py-2 col-md-6">
-            <div
-              class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-            >
-              <span>Facebook marketing</span> <span>90%</span>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Warning example"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 10px"
-            >
+            <!-- Progress Bars #3 -->
+            <div class="py-2 col-md-6">
               <div
-                class="progress-bar text-bg-primary"
-                style="width: 90%"
-              ></div>
+                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+              >
+                <span>Facebook marketing</span> <span>90%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Warning example"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 10px"
+              >
+                <div
+                  class="progress-bar text-bg-primary"
+                  style="width: 90%"
+                ></div>
+              </div>
             </div>
-          </div>
 
-          <!-- Progress Bars #4 -->
-          <div class="py-2 col-md-6">
-            <div
-              class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-            >
-              <span>Affilate marketing</span> <span>80%</span>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Warning example"
-              aria-valuenow="80"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 10px"
-            >
+            <!-- Progress Bars #4 -->
+            <div class="py-2 col-md-6">
               <div
-                class="progress-bar text-bg-primary"
-                style="width: 80%"
-              ></div>
+                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+              >
+                <span>Affilate marketing</span> <span>80%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Warning example"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 10px"
+              >
+                <div
+                  class="progress-bar text-bg-primary"
+                  style="width: 80%"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
@@ -537,7 +583,7 @@
     </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="container-xl bg-white">
+    <section id="portfolio" class="container-xxl bg-white">
       <div class="py-5 px-2">
         <!-- Heading -->
         <div class="text-center">
@@ -560,7 +606,7 @@
 
         <!-- Images -->
         <div class="row flex-wrap">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <img
               src="/images/works/1.png"
               class="w-100 align-middle mt-4"
@@ -571,6 +617,8 @@
               class="w-100 align-middle mt-4"
               alt=""
             />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <img
               src="/images/works/3.png"
               class="w-100 align-middle mt-4"
@@ -582,7 +630,7 @@
               alt=""
             />
           </div>
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <img
               src="/images/works/5.png"
               class="w-100 align-middle mt-4"
@@ -593,6 +641,8 @@
               class="w-100 align-middle mt-4"
               alt=""
             />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <img
               src="/images/works/1.png"
               class="w-100 align-middle mt-4"
@@ -609,124 +659,136 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="container-xl bg-white">
-      <div class="swiper mySwiper p-2">
+    <section id="testimonials" class="container-xxl bg-white">
+      <div class="swiper testimonialsSwiper p-2">
         <div class="d-md-flex justify-content-between align-items-center">
-          <div class="">
+          <div class="col-md-8">
             <p class="text-secondary fs-2 fw-bold">
               Clients Are Satisfied For Our Work, View Feedback
             </p>
           </div>
-          <div class="">
-            <div class="sw-btn-prev d-inline-block me-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-arrow-left-circle-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
-                />
-              </svg>
-            </div>
-            <div class="sw-btn-next d-inline-block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-arrow-right-circle-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-                />
-              </svg>
+          <div class="col-md-4">
+            <div class="d-md-flex justify-content-end">
+              <div class="sw-btn-prev d-inline-block me-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-arrow-left-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+                  />
+                </svg>
+              </div>
+              <div class="sw-btn-next d-inline-block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="swiper-wrapper my-5">
           <div class="swiper-slide">
-            <div class="px-3 py-4 bg-light">
-              <div class="fw-bold m-0 py-2 d-flex justify-content-between">
-                <span class="text-secondary fs-5">Awesome Service!</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  fill="currentColor"
-                  class="bi bi-caret-right-fill text-primary"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-                  />
-                </svg>
+            <div class="bg-light d-md-flex">
+              <div class="d-none d-md-block">
+                <img src="/images/testimonials/1.png" alt="" />
               </div>
-              <p class="text-body-tertiary fs-6 m-0 py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente, quo!
-              </p>
-              <div class="d-flex align-items-center pt-4">
-                <img
-                  src="/images/testimonials/1.png"
-                  class="circle-img-thumbnail me-3"
-                  alt=""
-                />
-                <div class="">
-                  <div class="fw-bold text-secondary fs-5">Beseie Cooper</div>
-                  <div class="mb-2 text-muted">Web Designer</div>
-                  <div>
-                    <i class="bi bi-star-fill text-star"></i>
-                    <i class="bi bi-star-fill text-star"></i>
-                    <i class="bi bi-star-fill text-star"></i>
-                    <i class="bi bi-star-fill text-star"></i>
-                    <i class="bi bi-star-fill text-star"></i>
+              <div class="px-3 py-4">
+                <div class="fw-bold m-0 py-2 d-flex justify-content-between">
+                  <span class="text-secondary fs-5">Awesome Service!</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill text-primary"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-body-tertiary fs-6 m-0 py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente, quo!
+                </p>
+                <div class="d-flex align-items-center pt-4">
+                  <img
+                    src="/images/testimonials/1.png"
+                    class="circle-img-thumbnail me-3 d-md-none"
+                    alt=""
+                  />
+                  <div class="">
+                    <div class="fw-bold text-secondary fs-5">Beseie Cooper</div>
+                    <div class="mb-2 text-muted">Web Designer</div>
+                    <div>
+                      <i class="bi bi-star-fill text-star"></i>
+                      <i class="bi bi-star-fill text-star"></i>
+                      <i class="bi bi-star-fill text-star"></i>
+                      <i class="bi bi-star-fill text-star"></i>
+                      <i class="bi bi-star-fill text-star"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="px-3 py-4 bg-light">
-              <div class="fw-bold m-0 py-2 d-flex justify-content-between">
-                <span class="text-secondary fs-5">Awesome Service!</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  fill="currentColor"
-                  class="bi bi-caret-right-fill text-primary"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-                  />
-                </svg>
+            <div class="bg-light d-md-flex">
+              <div class="d-none d-md-block">
+                <img src="/images/testimonials/2.png" alt="" />
               </div>
-              <p class="text-body-tertiary fs-6 m-0 py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente, quo!
-              </p>
-              <div class="d-flex align-items-center pt-4">
-                <img
-                  src="/images/testimonials/2.png"
-                  class="circle-img-thumbnail me-3"
-                  alt=""
-                />
-                <div class="">
-                  <div class="fw-bold text-secondary fs-5">Beseie Cooper</div>
-                  <div class="mb-2 text-muted">Web Designer</div>
-                  <div>
-                    <i class="bi bi-star-fill text-star"></i>
-                    <i class="bi bi-star-fill text-star"></i>
-                    <i class="bi bi-star-fill text-star"></i>
-                    <i class="bi bi-star-fill text-star"></i>
-                    <i class="bi bi-star-fill text-star"></i>
+              <div class="px-3 py-4">
+                <div class="fw-bold m-0 py-2 d-flex justify-content-between">
+                  <span class="text-secondary fs-5">Awesome Service!</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill text-primary"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-body-tertiary fs-6 m-0 py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente, quo!
+                </p>
+                <div class="d-flex align-items-center pt-4">
+                  <img
+                    src="/images/testimonials/1.png"
+                    class="circle-img-thumbnail me-3 d-md-none"
+                    alt=""
+                  />
+                  <div class="">
+                    <div class="fw-bold text-secondary fs-5">Beseie Cooper</div>
+                    <div class="mb-2 text-muted">Web Designer</div>
+                    <div>
+                      <i class="bi bi-star-fill text-star"></i>
+                      <i class="bi bi-star-fill text-star"></i>
+                      <i class="bi bi-star-fill text-star"></i>
+                      <i class="bi bi-star-fill text-star"></i>
+                      <i class="bi bi-star-fill text-star"></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -737,7 +799,7 @@
     </section>
 
     <!-- Blog -->
-    <section id="blog" class="container-xl bg-supportingDark">
+    <section id="blog" class="container-xxl bg-supportingDark">
       <div class="py-5 px-2">
         <!-- Heading -->
         <div class="text-center">
@@ -748,39 +810,64 @@
         </div>
 
         <!-- Single Blogs -->
-        <div class="my-3">
+        <div class="my-3 row">
           <!-- Single #1 -->
-          <div class="py-2">
-            <div class="position-relative">
-              <img src="/images/blog/1.png" class="img-fluid" alt="" />
-              <div
-                class="position-absolute top-0 end-0 bg-supportingDark text-white p-2"
-              >
-                13 Dec 2022
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="py-2">
+              <div class="position-relative">
+                <img src="/images/blog/1.png" class="w-100" alt="" />
+                <div
+                  class="position-absolute top-0 end-0 bg-supportingDark text-white p-2"
+                >
+                  13 Dec 2022
+                </div>
               </div>
-            </div>
-            <div class="py-3">
-              <h5 class="text-primary">UI/UX Design</h5>
-              <p class="text-white display-8 fw-semibold mb-1">
-                User interface design or user interface engineering
-              </p>
+              <div class="py-3">
+                <h5 class="text-primary">UI/UX Design</h5>
+                <p class="text-white display-8 fw-semibold mb-1">
+                  User interface design or user interface engineering
+                </p>
+              </div>
             </div>
           </div>
+
           <!-- Single #2 -->
-          <div class="py-2">
-            <div class="position-relative">
-              <img src="/images/blog/2.png" class="img-fluid" alt="" />
-              <div
-                class="position-absolute top-0 end-0 bg-supportingDark text-white p-2"
-              >
-                13 Dec 2022
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="py-2">
+              <div class="position-relative">
+                <img src="/images/blog/2.png" class="w-100" alt="" />
+                <div
+                  class="position-absolute top-0 end-0 bg-supportingDark text-white p-2"
+                >
+                  13 Dec 2022
+                </div>
+              </div>
+              <div class="py-3">
+                <h5 class="text-primary">Web Design</h5>
+                <p class="text-white display-8 fw-semibold mb-1">
+                  Web design encompasses many different skills
+                </p>
               </div>
             </div>
-            <div class="py-3">
-              <h5 class="text-primary">Web Design</h5>
-              <p class="text-white display-8 fw-semibold mb-1">
-                Web design encompasses many different skills
-              </p>
+          </div>
+
+          <!-- Single #3 -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="py-2">
+              <div class="position-relative">
+                <img src="/images/blog/2.png" class="w-100" alt="" />
+                <div
+                  class="position-absolute top-0 end-0 bg-supportingDark text-white p-2"
+                >
+                  13 Dec 2022
+                </div>
+              </div>
+              <div class="py-3">
+                <h5 class="text-primary">Web Design</h5>
+                <p class="text-white display-8 fw-semibold mb-1">
+                  Web design encompasses many different skills
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -788,14 +875,36 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container-xl bg-white">
-      <div class="py-2">
-        <div>
-          <div class="text-secondary fs-2 fw-bold display-8 py-4">
-            Let's message me and mack something together
+    <section id="contact" class="container-xxl bg-white">
+      <div class="row my-5 p-2">
+        <div class="d-none d-md-block col-md-5">
+          <div class="text-secondary fw-bold display-5 py-4">Let's Connect</div>
+          <p class="fw-semibold fs-6 text-black-50">
+            Please fill out the form on this section to contact with me. Or call
+            between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
+          </p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-black">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="text-black">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="text-black">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="text-black">
+              <i class="bi bi-globe"></i>
+            </a>
+            <a href="#" class="text-black">
+              <i class="bi bi-facebook"></i>
+            </a>
           </div>
         </div>
-        <div>
+        <div class="col-md-7">
+          <div class="text-secondary fw-bold display-7 py-4">
+            Let's message me and mack something together
+          </div>
           <form>
             <div class="mb-3">
               <input
@@ -832,7 +941,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" class="container-xl bg-supportingLight mt-4">
+    <footer id="footer" class="container-xxl bg-supportingLight mt-4">
       <div class="p-4 text-secondary text-center">
         <span
           >Developed with love by
@@ -843,11 +952,10 @@
 
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
     <!-- Bootstrap -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".servicesSwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
         navigation: {
@@ -865,7 +973,30 @@
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 40,
+          },
+        },
+      });
+
+      var swiper = new Swiper(".testimonialsSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".sw-btn-next",
+          prevEl: ".sw-btn-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
           },
         },
       });
