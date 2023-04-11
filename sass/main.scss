@@ -4,39 +4,13 @@ $secondary: #15295f;
 
 $font-size-base: 0.8rem;
 
+$shadow-custom-lg: 0 0 2.5rem rgba(0, 0, 0, 0.085);
+
 // $btn-padding-y: 0.4rem;
 
 // import the functions & variables
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
-// @import "../node_modules/bootstrap/scss/maps";
-// @import "../node_modules/bootstrap/scss/mixins";
-// @import "../node_modules/bootstrap/scss/buttons";
-// @import "../node_modules/bootstrap/scss/utilities";
-
-// $utilities: map-merge(
-//   $utilities,
-//   (
-//     "rounded-start-pill": (
-//       property: border-top-right-radius border-bottom-right-radius,
-//       class: rounded-start-pill,
-//       values: (
-//         sm: 0,
-//         md: var(--#{$prefix}border-radius-pill),
-//       ),
-//     ),
-//     "rounded-end-pill": (
-//       property: border-top-left-radius border-bottom-left-radius,
-//       class: rounded-end-pill,
-//       values: (
-//         sm: 0,
-//         md: var(--#{$prefix}border-radius-pill),
-//       ),
-//     ),
-//   )
-// );
-
-// @import "../node_modules/bootstrap/scss/utilities/api";
 
 // custom padding
 $custom-spacers: (
@@ -75,6 +49,14 @@ $custom-display-font-sizes: (
 // merge the maps to add new theme colors
 $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 
+.shadow-sm-none {
+  box-shadow: none;
+}
+
+.shadow-custom-lg-lg {
+  box-shadow: none;
+}
+
 @media (max-width: map-get($grid-breakpoints, "sm")) {
   .rounded-pill-sm {
     border-radius: $border-radius-pill;
@@ -88,6 +70,17 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 
   .rounded-end-pill-md {
     border-radius: 0 $border-radius-pill $border-radius-pill 0;
+  }
+  .rounded-pill-md {
+    border-radius: $border-radius-pill;
+  }
+
+  .shadow-md-none {
+    box-shadow: none !important;
+  }
+
+  .shadow-custom-md-lg {
+    box-shadow: $shadow-custom-lg;
   }
 }
 
@@ -103,13 +96,30 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
   margin: auto;
 }
 
+.w-85-xl {
+  width: 100%;
+}
+
+.mw-lg {
+  max-width: auto;
+}
+
 @media (min-width: map-get($grid-breakpoints, "xl")) {
   .-mt-ex {
-    margin-top: -4rem;
+    margin-top: -3.5rem;
   }
 
   .position-xl-relative {
     position: relative;
+  }
+
+  .w-85-xl {
+    width: 85%;
+  }
+
+  .mw-lg {
+    width: fit-content;
+    max-width: 960px;
   }
 }
 
@@ -125,6 +135,10 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 
 .shadow-custom {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-custom-lg {
+  box-shadow: $shadow-custom-lg;
 }
 
 .sw-btn-next > svg,
@@ -146,7 +160,6 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  // object-fit: cover;
 }
 
 .form-control {
@@ -161,4 +174,19 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 .btn {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.size-circle-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.size-circle-icon-lg {
+  width: 4rem;
+  height: 4rem;
 }
