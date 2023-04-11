@@ -26,13 +26,11 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-//custom buttons
 $btn-border-radius: 50rem;
 $btn-padding-x: 1.6rem;
 $btn-padding-y: 0.7rem;
 $btn-border-width: 2px;
 
-// custom display font sizes
 $custom-display-font-sizes: (
   0: 7rem,
   7: 2rem,
@@ -40,7 +38,6 @@ $custom-display-font-sizes: (
   9: 1.1rem,
 );
 
-// merge the maps to add new theme colors
 $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 
 .shadow-sm-none {
@@ -49,6 +46,30 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 
 .shadow-custom-lg-lg {
   box-shadow: none;
+}
+
+.position-xl-relative {
+  position: static;
+}
+
+.-mt-ex {
+  margin: auto;
+}
+
+.w-85-xl {
+  width: 100%;
+}
+
+.mw-lg {
+  max-width: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: $secondary;
+  font-weight: 600;
+  &.active {
+    color: $primary;
+  }
 }
 
 @media (max-width: map-get($grid-breakpoints, "sm")) {
@@ -78,29 +99,9 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
   }
 }
 
-// .w-xl {
-//   width: fit-content;
-//   margin: auto;
-// }
-
-.position-xl-relative {
-  position: static;
-}
-.-mt-ex {
-  margin: auto;
-}
-
-.w-85-xl {
-  width: 100%;
-}
-
-.mw-lg {
-  max-width: auto;
-}
-
 @media (min-width: map-get($grid-breakpoints, "xl")) {
   .-mt-ex {
-    margin-top: -3.5rem;
+    margin-top: -3rem;
   }
 
   .position-xl-relative {
@@ -112,18 +113,11 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
   }
 
   .mw-lg {
-    width: fit-content;
+    // width: fit-content;
     max-width: 960px;
   }
 }
 
-.navbar-nav .nav-item .nav-link {
-  color: $secondary;
-  font-weight: 600;
-  &.active {
-    color: $primary;
-  }
-}
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -140,7 +134,6 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
   color: $primary;
 }
 
-// Carousel
 .swiper {
   width: 100%;
   height: 100%;
