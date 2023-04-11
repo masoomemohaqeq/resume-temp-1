@@ -1,4 +1,3 @@
-// custom variable values
 $primary: #fd6e0a;
 $secondary: #15295f;
 
@@ -6,13 +5,9 @@ $font-size-base: 0.8rem;
 
 $shadow-custom-lg: 0 0 2.5rem rgba(0, 0, 0, 0.085);
 
-// $btn-padding-y: 0.4rem;
-
-// import the functions & variables
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 
-// custom padding
 $custom-spacers: (
   6: $spacer * 4.5,
   7: $spacer * 6,
@@ -21,7 +16,6 @@ $custom-spacers: (
 
 $spacers: map-merge($custom-spacers, $spacers);
 
-// custom theme colours
 $custom-theme-colors: (
   "supportingLighter": #fdf8f7,
   "supportingLight": #fdf8f7,
