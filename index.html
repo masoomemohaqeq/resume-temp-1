@@ -13,11 +13,11 @@
     />
 
     <!-- Swipper -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    /> -->
     <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css" />
+
+    <!-- animate -->
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css" />
+
     <!-- Main -->
     <link rel="stylesheet" href="/css/main.min.css" />
   </head>
@@ -517,60 +517,72 @@
         <div
           class="text-secondary fw-semibold d-flex justify-content-center flex-wrap p-2"
         >
-          <div class="p-2 text-primary">All</div>
-          <div class="p-2">Youtube</div>
-          <div class="p-2">Vimeo</div>
-          <div class="p-2">Soundcloud</div>
-          <div class="p-2">Popup</div>
-          <div class="p-2">Details</div>
+          <div class="p-2 text-primary" data-cat="all">All</div>
+          <div class="p-2" data-cat="youtube">youtube</div>
+          <div class="p-2" data-cat="vimeo">Vimeo</div>
+          <div class="p-2" data-cat="soundcloud">Soundcloud</div>
+          <div class="p-2" data-cat="popup">Popup</div>
+          <div class="p-2" data-cat="details">Details</div>
         </div>
 
         <!-- Images -->
-        <div class="row flex-wrap">
-          <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="row flex-wrap align-items-start">
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            data-cat-img="youtube"
+          >
             <img
               src="/images/works/1.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
-            <img
-              src="/images/works/2.png"
-              class="w-100 align-middle mt-4"
-              alt=""
-            />
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <img
-              src="/images/works/3.png"
-              class="w-100 align-middle mt-4"
-              alt=""
-            />
-            <img
-              src="/images/works/4.png"
-              class="w-100 align-middle mt-4"
-              alt=""
-            />
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            data-cat-img="soundcloud"
+          >
             <img
               src="/images/works/5.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            data-cat-img="vimeo"
+          >
             <img
-              src="/images/works/6.png"
+              src="/images/works/3.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            data-cat-img="popup"
+          >
             <img
               src="/images/works/1.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            data-cat-img="popup"
+          >
             <img
-              src="/images/works/2.png"
+              src="/images/works/5.png"
+              class="w-100 align-middle mt-4"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            data-cat-img="details"
+          >
+            <img
+              src="/images/works/3.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
@@ -838,7 +850,7 @@
           </div>
         </div>
 
-        <!-- Single Blogs -->
+        <!-- Blog Items -->
         <div class="my-3 row">
           <!-- Single #1 -->
           <div class="col-12 col-md-6 col-xl-4">

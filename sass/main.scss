@@ -203,3 +203,7 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
     opacity: 0.8;
   }
 }
+
+#portfolio [data-cat] {
+  cursor: pointer;
+}
