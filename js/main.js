@@ -44,18 +44,40 @@ var swiper = new Swiper(".testimonialsSwiper", {
   },
 });
 
-// add navbar style in scroll
-window.onscroll = function () {
-  scrollFunction();
+const navbar = {
+  isOpen: false,
+  navbarEl: document.querySelector("#navbar"),
+  check: function () {
+    if (
+      document.body.scrollTop > 70 ||
+      document.documentElement.scrollTop > 70 ||
+      (screen.width <= 768 && this.isOpen)
+    ) {
+      this.navbarEl.style.backgroundColor = "white";
+      this.navbarEl.style.boxShadow = "0 0 0.5rem rgba(0, 0, 0, 0.075)";
+    } else {
+      this.navbarEl.style.backgroundColor = "transparent";
+      this.navbarEl.style.boxShadow = "none";
+    }
+  },
+  showEvent: function () {
+    navbar.isOpen = true;
+    navbar.check();
+  },
+  hiddenEvent: function () {
+    navbar.isOpen = false;
+    navbar.check();
+  },
 };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-    document.getElementById("navbar").style.backgroundColor = "white";
-    document.getElementById("navbar").style.boxShadow =
-      "0 0 0.5rem rgba(0, 0, 0, 0.075)";
-  } else {
-    document.getElementById("navbar").style.backgroundColor = "transparent";
-    document.getElementById("navbar").style.boxShadow = "none";
-  }
-}
+window.onscroll = function () {
+  navbar.check();
+};
+
+navbar.navbarEl.addEventListener("show.bs.collapse", (event) => {
+  navbar.showEvent();
+});
+
+navbar.navbarEl.addEventListener("hidden.bs.collapse", (event) => {
+  navbar.hiddenEvent();
+});

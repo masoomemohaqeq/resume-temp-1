@@ -13,11 +13,11 @@
     />
 
     <!-- Swipper -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-
+    /> -->
+    <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css" />
     <!-- Main -->
     <link rel="stylesheet" href="/css/main.min.css" />
   </head>
@@ -842,7 +842,11 @@
         <div class="my-3 row">
           <!-- Single #1 -->
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="py-2">
+            <div
+              class="py-2"
+              data-bs-toggle="modal"
+              data-bs-target="#blogModal"
+            >
               <div class="position-relative">
                 <img src="/images/blog/1.png" class="w-100" alt="" />
                 <div
@@ -862,7 +866,11 @@
 
           <!-- Single #2 -->
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="py-2">
+            <div
+              class="py-2"
+              data-bs-toggle="modal"
+              data-bs-target="#blogModal"
+            >
               <div class="position-relative">
                 <img src="/images/blog/2.png" class="w-100" alt="" />
                 <div
@@ -882,7 +890,11 @@
 
           <!-- Single #3 -->
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="py-2">
+            <div
+              class="py-2"
+              data-bs-toggle="modal"
+              data-bs-target="#blogModal"
+            >
               <div class="position-relative">
                 <img src="/images/blog/2.png" class="w-100" alt="" />
                 <div
@@ -979,8 +991,57 @@
       </div>
     </footer>
 
+    <!-- Blog Modal -->
+    <div
+      class="modal fade"
+      id="blogModal"
+      tabindex="-1"
+      aria-labelledby="blogModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="">
+            <img src="/images/blog/2.png" class="w-100 rounded-top" alt="" />
+            <div class="position-absolute top-0 end-0 m-2 modal-close-btn">
+              <i
+                class="bi bi-x-circle-fill fs-2 text-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></i>
+            </div>
+          </div>
+          <div class="modal-body p-4">
+            <h5 class="text-secondary fw-bold">
+              User interface design or user interface engineering
+            </h5>
+            <ul
+              class="d-flex flex-column flex-md-row gap-2 ps-0 text-supportingDark fs-7"
+            >
+              <li>23 Oct 2022</li>
+              <li>UI/UX Design</li>
+              <li>By <span class="text-primary">Admin</span></li>
+            </ul>
+            <p class="text-muted">
+              We live in a world where we need to move quickly and iterate on
+              our ideas as flexibly as possible. Building mockups strikes the
+              ideal balance between true-life representation of the end product
+              and ease of modification.
+            </p>
+            <p class="text-muted">
+              We live in a world where we need to move quickly and iterate on
+              our ideas as flexibly as possible. Building mockups strikes the
+              ideal balance between true-life representation of the end product
+              and ease of modification.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="/plugins/swiper/swiper-bundle.min.js"></script>
+
     <!-- Bootstrap -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

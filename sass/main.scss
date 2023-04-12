@@ -8,6 +8,12 @@ $shadow-custom-lg: 0 0 2.5rem rgba(0, 0, 0, 0.085);
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 
+$custom-font-sizes: (
+  7: $font-size-base - 0.1,
+);
+
+$font-sizes: map-merge($custom-font-sizes, $font-sizes);
+
 $custom-spacers: (
   6: $spacer * 4.5,
   7: $spacer * 6,
@@ -176,4 +182,24 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 .size-circle-icon-lg {
   width: 4rem;
   height: 4rem;
+}
+
+#blogModal ul {
+  list-style-position: inside;
+
+  li {
+    align-items: center;
+  }
+  li::marker {
+    color: #d7d7d7;
+  }
+}
+
+.modal-close-btn {
+  cursor: pointer;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
