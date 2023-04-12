@@ -517,19 +517,22 @@
         <div
           class="text-secondary fw-semibold d-flex justify-content-center flex-wrap p-2"
         >
-          <div class="p-2 text-primary" data-cat="all">All</div>
-          <div class="p-2" data-cat="youtube">youtube</div>
-          <div class="p-2" data-cat="vimeo">Vimeo</div>
-          <div class="p-2" data-cat="soundcloud">Soundcloud</div>
-          <div class="p-2" data-cat="popup">Popup</div>
-          <div class="p-2" data-cat="details">Details</div>
+          <div class="p-2 cursor-pointer text-primary" data-cat="all">All</div>
+          <div class="p-2 cursor-pointer" data-cat="youtube">youtube</div>
+          <div class="p-2 cursor-pointer" data-cat="vimeo">Vimeo</div>
+          <div class="p-2 cursor-pointer" data-cat="soundcloud">Soundcloud</div>
+          <div class="p-2 cursor-pointer" data-cat="popup">Popup</div>
+          <div class="p-2 cursor-pointer" data-cat="details">Details</div>
         </div>
 
         <!-- Images -->
         <div class="row flex-wrap align-items-start">
           <div
-            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            class="col-sm-12 col-md-6 col-lg-3 cursor-pointer animate__animated"
             data-cat-img="youtube"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+            data-img-src="/images/works/1.png"
           >
             <img
               src="/images/works/1.png"
@@ -538,8 +541,11 @@
             />
           </div>
           <div
-            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            class="col-sm-12 col-md-6 col-lg-3 cursor-pointer animate__animated"
             data-cat-img="soundcloud"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+            data-img-src="/images/works/5.png"
           >
             <img
               src="/images/works/5.png"
@@ -548,8 +554,11 @@
             />
           </div>
           <div
-            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            class="col-sm-12 col-md-6 col-lg-3 cursor-pointer animate__animated"
             data-cat-img="vimeo"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+            data-img-src="/images/works/3.png"
           >
             <img
               src="/images/works/3.png"
@@ -558,8 +567,11 @@
             />
           </div>
           <div
-            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            class="col-sm-12 col-md-6 col-lg-3 cursor-pointer animate__animated"
             data-cat-img="popup"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+            data-img-src="/images/works/1.png"
           >
             <img
               src="/images/works/1.png"
@@ -568,8 +580,11 @@
             />
           </div>
           <div
-            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            class="col-sm-12 col-md-6 col-lg-3 cursor-pointer animate__animated"
             data-cat-img="popup"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+            data-img-src="/images/works/5.png"
           >
             <img
               src="/images/works/5.png"
@@ -578,8 +593,11 @@
             />
           </div>
           <div
-            class="col-sm-12 col-md-6 col-lg-3 animate__animated"
+            class="col-sm-12 col-md-6 col-lg-3 cursor-pointer animate__animated"
             data-cat-img="details"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+            data-img-src="/images/works/3.png"
           >
             <img
               src="/images/works/3.png"
@@ -855,7 +873,7 @@
           <!-- Single #1 -->
           <div class="col-12 col-md-6 col-xl-4">
             <div
-              class="py-2"
+              class="py-2 cursor-pointer"
               data-bs-toggle="modal"
               data-bs-target="#blogModal"
             >
@@ -879,7 +897,7 @@
           <!-- Single #2 -->
           <div class="col-12 col-md-6 col-xl-4">
             <div
-              class="py-2"
+              class="py-2 cursor-pointer"
               data-bs-toggle="modal"
               data-bs-target="#blogModal"
             >
@@ -903,7 +921,7 @@
           <!-- Single #3 -->
           <div class="col-12 col-md-6 col-xl-4">
             <div
-              class="py-2"
+              class="py-2 cursor-pointer"
               data-bs-toggle="modal"
               data-bs-target="#blogModal"
             >
@@ -1050,8 +1068,29 @@
         </div>
       </div>
     </div>
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade"
+      id="portfolioModal"
+      tabindex="-1"
+      aria-labelledby="portfolioModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="/images/works/1.png" class="w-100 rounded" alt="" />
+          <div class="position-absolute top-0 end-0 m-2 modal-close-btn">
+            <i
+              class="bi bi-x-circle-fill fs-2 text-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Swiper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="/plugins/swiper/swiper-bundle.min.js"></script>
 
     <!-- Bootstrap -->

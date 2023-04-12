@@ -1,5 +1,5 @@
 window.onload = function () {
-  var swiper = new Swiper(".servicesSwiper", {
+  new Swiper(".servicesSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
@@ -22,7 +22,7 @@ window.onload = function () {
     },
   });
 
-  var swiper = new Swiper(".testimonialsSwiper", {
+  new Swiper(".testimonialsSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
@@ -83,6 +83,7 @@ window.onload = function () {
     navbar.hiddenEvent();
   });
 
+  // portfolio effects
   const portfolioCatEls = document.querySelectorAll("[data-cat]");
   const portfolioCatAllEl = document.querySelector("[data-cat='all']");
   const portfolioCatImgEls = document.querySelectorAll("[data-cat-img]");
@@ -114,14 +115,21 @@ window.onload = function () {
   });
 
   portfolioCatAllEl.addEventListener("click", () => {
-    setTimeout(
-      [...portfolioCatImgEls].forEach((image) => {
-        image.classList.remove("animate__zoomIn");
-        image.classList.remove("animate__zoomOut");
-        image.classList.add("d-block");
-        image.classList.remove("d-none");
-      }),
-      5000
-    );
+    [...portfolioCatImgEls].forEach((image) => {
+      image.classList.add("animate__zoomIn");
+      image.classList.remove("animate__zoomOut");
+      image.classList.add("d-block");
+      image.classList.remove("d-none");
+    });
   });
+
+  // portfolio modals
+  [...document.querySelectorAll("[data-bs-target='#portfolioModal']")].forEach(
+    (imgContainer) => {
+      imgContainer.addEventListener("click", () => {
+        document.querySelector("#portfolioModal img").src =
+          imgContainer.dataset.imgSrc;
+      });
+    }
+  );
 };

@@ -204,6 +204,6 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
   }
 }
 
-#portfolio [data-cat] {
+.cursor-pointer {
   cursor: pointer;
 }
