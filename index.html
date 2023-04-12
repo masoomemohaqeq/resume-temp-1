@@ -18,6 +18,9 @@
     <!-- animate -->
     <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+
     <!-- Main -->
     <link rel="stylesheet" href="/css/main.min.css" />
   </head>
@@ -309,7 +312,7 @@
     <!-- Why Choose Me -->
     <section id="why" class="bg-supportingLighter">
       <div class="container">
-        <div class="py-5 px-2">
+        <div class="py-5 px-2" data-aos="flip-up" data-aos-delay="80">
           <!-- Heading -->
           <div class="text-center">
             <div class="text-primary display-9 fw-semibold">Why Choose Me</div>
@@ -1090,12 +1093,19 @@
         </div>
       </div>
     </div>
+
     <!-- Swiper -->
     <script src="/plugins/swiper/swiper-bundle.min.js"></script>
 
     <!-- Bootstrap -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- AOS -->
+    <script src="/node_modules/aos/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
     <script src="/js/main.js"></script>
   </body>
 </html>
