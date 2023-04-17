@@ -1,4 +1,6 @@
 window.onload = function () {
+  const docEl = document.documentElement;
+
   new Swiper(".servicesSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -54,7 +56,7 @@ window.onload = function () {
         document.documentElement.scrollTop > 70 ||
         (screen.width <= 768 && this.isOpen)
       ) {
-        if (document.documentElement.getAttribute("data-bs-theme") == "dark")
+        if (docEl.getAttribute("data-bs-theme") == "dark")
           this.navbarEl.style.backgroundColor = "#21262d";
         else this.navbarEl.style.backgroundColor = "white";
 
@@ -135,18 +137,16 @@ window.onload = function () {
       });
     }
   );
+
+  [...document.querySelectorAll("[data-color-mode]")].forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (btn.dataset.colorMode == "dark") {
+        docEl.setAttribute("data-bs-theme", "light");
+      } else {
+        docEl.setAttribute("data-bs-theme", "dark");
+      }
+    });
+  });
 };
 
 AOS.init();
-
-const docEl = document.documentElement;
-
-[...document.querySelectorAll("[data-color-mode]")].forEach((btn) => {
-  btn.addEventListener("click", () => {
-    if (btn.dataset.colorMode == "dark") {
-      docEl.setAttribute("data-bs-theme", "light");
-    } else {
-      docEl.setAttribute("data-bs-theme", "dark");
-    }
-  });
-});
