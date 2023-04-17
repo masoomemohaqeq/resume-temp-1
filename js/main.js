@@ -54,7 +54,10 @@ window.onload = function () {
         document.documentElement.scrollTop > 70 ||
         (screen.width <= 768 && this.isOpen)
       ) {
-        this.navbarEl.style.backgroundColor = "white";
+        if (document.documentElement.getAttribute("data-bs-theme") == "dark")
+          this.navbarEl.style.backgroundColor = "#21262d";
+        else this.navbarEl.style.backgroundColor = "white";
+
         this.navbarEl.style.boxShadow = "0 0 0.5rem rgba(0, 0, 0, 0.075)";
       } else {
         this.navbarEl.style.backgroundColor = "transparent";
@@ -133,3 +136,17 @@ window.onload = function () {
     }
   );
 };
+
+AOS.init();
+
+const docEl = document.documentElement;
+
+[...document.querySelectorAll("[data-color-mode]")].forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.colorMode == "dark") {
+      docEl.setAttribute("data-bs-theme", "light");
+    } else {
+      docEl.setAttribute("data-bs-theme", "dark");
+    }
+  });
+});
