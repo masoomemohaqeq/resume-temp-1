@@ -1,9 +1,9 @@
 $primary: #fd6e0a;
-$dark-p: #e58746;
+$primary-dark: #e58746;
 $secondary: #15295f;
 $secondary-regular-dark: #21262d;
 $secondary-semi-dark: #141414;
-$supportingDark: #1f1d2b;
+$supporting-dark: #1f1d2b;
 
 $font-size-base: 0.8rem;
 
@@ -11,7 +11,6 @@ $shadow-custom-lg: 0 0 2.5rem rgba(0, 0, 0, 0.085);
 
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
-// @import "../node_modules/bootstrap/scss/variables-dark";
 
 $custom-font-sizes: (
   7: $font-size-base - 0.1,
@@ -28,20 +27,20 @@ $custom-spacers: (
 $spacers: map-merge($custom-spacers, $spacers);
 
 $custom-theme-colors: (
-  "supportingExtraLight": #fff,
-  "supportingLighter": #fdf8f7,
-  "supportingLight": #fdf8f7,
+  "supporting-extra-light": #fff,
+  "supporting-lighter": #fdf8f7,
+  "supporting-light": #fdf8f7,
   "supporting": #ff4e6e,
-  "supportingDark": $supportingDark,
+  "supporting-dark": $supporting-dark,
   "star": $yellow-500,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-$supportingLighter-bg-dark: "black";
-$supportingLight-bg-dark: "black";
+$supporting-lighter-bg-dark: "black";
+$supporting-light-bg-dark: "black";
 $supporting-bg-dark: "black";
-$supportingDark-bg-dark: "black";
+$supporting-dark-bg-dark: "black";
 
 $btn-border-radius: 50rem;
 $btn-padding-x: 1.6rem;
@@ -134,7 +133,6 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
   }
 
   .mw-lg {
-    // width: fit-content;
     max-width: 960px;
   }
 }
@@ -143,17 +141,17 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 [data-bs-theme="dark"] {
-  --bs-primary: $dark-p;
-  --bs-primary-rgb: #{to-rgb($dark-p)};
+  --bs-primary: $primary-dark;
+  --bs-primary-rgb: #{to-rgb($primary-dark)};
 
-  --bs-primary-text-emphasis: $dark-p;
-  --bs-primary-text-emphasis-rgb: #{to-rgb($dark-p)};
+  --bs-primary-text-emphasis: $primary-dark;
+  --bs-primary-text-emphasis-rgb: #{to-rgb($primary-dark)};
 
-  --bs-supportingLighter: $secondary-regular-dark;
-  --bs-supportingLighter-rgb: #{to-rgb($secondary-regular-dark)};
+  --bs-supporting-lighter: $secondary-regular-dark;
+  --bs-supporting-lighter-rgb: #{to-rgb($secondary-regular-dark)};
 
-  --bs-supportingLight: $supportingDark;
-  --bs-supportingLight-rgb: #{to-rgb($supportingDark)};
+  --bs-supporting-light: $supporting-dark;
+  --bs-supporting-light-rgb: #{to-rgb($supporting-dark)};
 
   --bs-supporting: $secondary-semi-dark;
   --bs-supporting-rgb: #{to-rgb($secondary-semi-dark)};
@@ -161,32 +159,93 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
   --bs-light: $secondary-semi-dark;
   --bs-light-rgb: #{to-rgb($secondary-semi-dark)};
 
-  --bs-supportingExtraLight: $secondary-regular-dark;
-  --bs-supportingExtraLight-rgb: #{to-rgb($secondary-regular-dark)};
+  --bs-supporting-extra-light: #272727;
+  --bs-supporting-extra-light-rgb: #{to-rgb(#272727)};
 
   --bs-secondary: $white;
   --bs-secondary-rgb: #{to-rgb($white)};
 
-  --bs-supportingDark-text: $white;
-  --bs-supportingDark-rgb-text: #{to-rgb($white)};
+  --bs-supporting-dark-text: $white;
+  --bs-supporting-dark-rgb-text: #{to-rgb($white)};
 
   --bs-black-rgb: $white;
   --bs-black-rgb: #{to-rgb($white)};
 
   .sw-btn-next > svg,
   .sw-btn-prev > svg {
-    color: $dark-p;
+    color: $primary-dark;
   }
 
   .swiper-button-disabled > svg {
     color: #c3c1c1;
   }
 
-  .progress {
-    --bs-progress-bar-bg: $dark-p;
-    --bs-progress-bar-bg-rgb: #{to-rgb($dark-p)};
-    --bs-progress-bar-color: $dark-p;
-    --bs-progress-bar-color-rgb: #{to-rgb($dark-p)};
+  .btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #e58746;
+    --bs-btn-border-color: #e58746;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #e58746;
+    --bs-btn-hover-border-color: #e58746;
+    --bs-btn-focus-shadow-rgb: 215, 94, 9;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #e58746;
+    --bs-btn-active-border-color: #e58746;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #e58746;
+    --bs-btn-disabled-border-color: #e58746;
+  }
+
+  .btn-outline-primary {
+    --bs-btn-color: #e58746;
+    --bs-btn-border-color: #e58746;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #e58746;
+    --bs-btn-hover-border-color: #e58746;
+    --bs-btn-focus-shadow-rgb: 253, 110, 10;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #e58746;
+    --bs-btn-active-border-color: #e58746;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #e58746;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #e58746;
+    --bs-gradient: none;
+  }
+
+  .btn-outline-secondary {
+    --bs-btn-color: $gray-500;
+    --bs-btn-border-color: ;
+    --bs-btn-hover-color: $gray-500;
+    --bs-btn-hover-bg: $gray-500;
+    --bs-btn-hover-border-color: $gray-500;
+    --bs-btn-focus-shadow-rgb: 21, 41, 95;
+    --bs-btn-active-color: $gray-500;
+    --bs-btn-active-bg: $gray-500;
+    --bs-btn-active-border-color: $gray-500;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: $gray-500;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: $gray-500;
+    --bs-gradient: none;
+  }
+
+  .text-bg-primary {
+    background-color: #e58746 !important;
+  }
+
+  .pills {
+    box-shadow: none;
+    .pill {
+      background-color: $supporting-dark;
+    }
+  }
+}
+
+.pills {
+  .pill {
+    background-color: $white;
   }
 }
 
