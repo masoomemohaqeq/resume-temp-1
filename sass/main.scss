@@ -140,6 +140,17 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@import "./fonts";
+
+:root {
+  --bs-body-font-family: "persian";
+}
+
+*,
+body {
+  font-family: "persian" !important;
+}
+
 [data-bs-theme="dark"] {
   --bs-primary: $primary-dark;
   --bs-primary-rgb: #{to-rgb($primary-dark)};
