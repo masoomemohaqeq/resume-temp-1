@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"
+    />
     <title>Resume</title>
 
     <!-- Bootstrap Icon -->
@@ -13,7 +16,7 @@
     />
 
     <!-- Swipper -->
-    <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css" />
@@ -22,9 +25,9 @@
     <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
 
     <!-- Main -->
-    <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
   </head>
-  <body class="bg-supporting-extra-light">
+  <body class="bg-supporting-extra-light overflow-x-hidden">
     <!-- Navbar -->
     <nav id="navbar" class="navbar fixed-top navbar-expand-lg px-2">
       <div class="container d-flex align-items-baseline">
@@ -102,7 +105,7 @@
     <!-- Intro -->
     <section class="bg-supporting-light">
       <div class="container">
-        <div class="row pt-5 px-2">
+        <div class="row pt-5">
           <div class="col-sm-12 col-md-7 col-xl-6 my-4 pt-xl-3 pb-xl-7">
             <div>
               <span class="text-primary fw-bold fs-4">Hi, Im</span>
@@ -125,7 +128,7 @@
           </div>
           <div class="d-none d-md-block col-md-5 col-xl-6 position-relative">
             <img
-              src="/images/hero-person-img.png"
+              src="/assets/images/hero-person-img.png"
               class="w-85-xl position-absolute bottom-0"
               alt="hardy"
             />
@@ -241,7 +244,7 @@
           </div>
         </div>
         <div class="col-lg-9">
-          <div class="swiper servicesSwiper p-2">
+          <div class="swiper services-swiper p-2">
             <div class="swiper-wrapper my-5 my-lg-0">
               <div class="swiper-slide shadow-custom">
                 <div class="text-center px-2 py-4">
@@ -342,195 +345,199 @@
     <!-- Why Choose Me -->
     <section id="why" class="bg-supporting-lighter">
       <div class="container">
-        <div class="py-5 px-2" data-aos="flip-up" data-aos-delay="100">
-          <!-- Heading -->
-          <div class="text-center mb-3">
-            <div class="text-primary display-9 fw-semibold">Why Choose Me</div>
-            <div class="text-secondary fs-3 fw-bold">My Experience Area</div>
-          </div>
-          <!-- Progress Bars -->
-          <div class="row gy-3">
-            <!-- Progress Bars #1 -->
-            <div class="col-md-6">
-              <div
-                class="fw-semibold text-secondary d-flex justify-content-between py-1"
-              >
-                <span>Facebook marketing</span> <span>90%</span>
+        <div class="py-5 px-2 overflow-x-hidden">
+          <div data-aos="flip-up" data-aos-delay="100">
+            <!-- Heading -->
+            <div class="text-center mb-3">
+              <div class="text-primary display-9 fw-semibold">
+                Why Choose Me
               </div>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="height: 10px"
-              >
-                <div
-                  class="progress-bar text-bg-primary"
-                  style="width: 90%"
-                ></div>
-              </div>
+              <div class="text-secondary fs-3 fw-bold">My Experience Area</div>
             </div>
-
-            <!-- Progress Bars #2 -->
-            <div class="col-md-6">
-              <div
-                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-              >
-                <span>Affilate marketing</span> <span>50%</span>
-              </div>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="height: 10px"
-              >
+            <!-- Progress Bars -->
+            <div class="row gy-3">
+              <!-- Progress Bars #1 -->
+              <div class="col-md-6">
                 <div
-                  class="progress-bar text-bg-primary"
-                  style="width: 50%"
-                ></div>
-              </div>
-            </div>
-
-            <!-- Progress Bars #3 -->
-            <div class="col-md-6">
-              <div
-                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-              >
-                <span>Facebook marketing</span> <span>90%</span>
-              </div>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="height: 10px"
-              >
+                  class="fw-semibold text-secondary d-flex justify-content-between py-1"
+                >
+                  <span>Facebook marketing</span> <span>90%</span>
+                </div>
                 <div
-                  class="progress-bar text-bg-primary"
-                  style="width: 90%"
-                ></div>
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 10px"
+                >
+                  <div
+                    class="progress-bar text-bg-primary"
+                    style="width: 90%"
+                  ></div>
+                </div>
               </div>
-            </div>
 
-            <!-- Progress Bars #4 -->
-            <div class="col-md-6">
-              <div
-                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-              >
-                <span>Affilate marketing</span> <span>80%</span>
-              </div>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="height: 10px"
-              >
+              <!-- Progress Bars #2 -->
+              <div class="col-md-6">
                 <div
-                  class="progress-bar text-bg-primary"
-                  style="width: 80%"
-                ></div>
+                  class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+                >
+                  <span>Affilate marketing</span> <span>50%</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 10px"
+                >
+                  <div
+                    class="progress-bar text-bg-primary"
+                    style="width: 50%"
+                  ></div>
+                </div>
               </div>
-            </div>
 
-            <!-- Progress Bars #1 -->
-            <div class="col-md-6">
-              <div
-                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-              >
-                <span>Facebook marketing</span> <span>90%</span>
-              </div>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="height: 10px"
-              >
+              <!-- Progress Bars #3 -->
+              <div class="col-md-6">
                 <div
-                  class="progress-bar text-bg-primary"
-                  style="width: 90%"
-                ></div>
+                  class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+                >
+                  <span>Facebook marketing</span> <span>90%</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 10px"
+                >
+                  <div
+                    class="progress-bar text-bg-primary"
+                    style="width: 90%"
+                  ></div>
+                </div>
               </div>
-            </div>
 
-            <!-- Progress Bars #2 -->
-            <div class="col-md-6">
-              <div
-                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-              >
-                <span>Affilate marketing</span> <span>50%</span>
-              </div>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="height: 10px"
-              >
+              <!-- Progress Bars #4 -->
+              <div class="col-md-6">
                 <div
-                  class="progress-bar text-bg-primary"
-                  style="width: 50%"
-                ></div>
+                  class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+                >
+                  <span>Affilate marketing</span> <span>80%</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 10px"
+                >
+                  <div
+                    class="progress-bar text-bg-primary"
+                    style="width: 80%"
+                  ></div>
+                </div>
               </div>
-            </div>
 
-            <!-- Progress Bars #3 -->
-            <div class="col-md-6">
-              <div
-                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-              >
-                <span>Facebook marketing</span> <span>90%</span>
-              </div>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="height: 10px"
-              >
+              <!-- Progress Bars #1 -->
+              <div class="col-md-6">
                 <div
-                  class="progress-bar text-bg-primary"
-                  style="width: 90%"
-                ></div>
+                  class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+                >
+                  <span>Facebook marketing</span> <span>90%</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 10px"
+                >
+                  <div
+                    class="progress-bar text-bg-primary"
+                    style="width: 90%"
+                  ></div>
+                </div>
               </div>
-            </div>
 
-            <!-- Progress Bars #4 -->
-            <div class="col-md-6">
-              <div
-                class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
-              >
-                <span>Affilate marketing</span> <span>80%</span>
-              </div>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="height: 10px"
-              >
+              <!-- Progress Bars #2 -->
+              <div class="col-md-6">
                 <div
-                  class="progress-bar text-bg-primary"
-                  style="width: 80%"
-                ></div>
+                  class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+                >
+                  <span>Affilate marketing</span> <span>50%</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 10px"
+                >
+                  <div
+                    class="progress-bar text-bg-primary"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Progress Bars #3 -->
+              <div class="col-md-6">
+                <div
+                  class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+                >
+                  <span>Facebook marketing</span> <span>90%</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 10px"
+                >
+                  <div
+                    class="progress-bar text-bg-primary"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Progress Bars #4 -->
+              <div class="col-md-6">
+                <div
+                  class="fw-semibold text-secondary fs-6 d-flex justify-content-between py-1"
+                >
+                  <span>Affilate marketing</span> <span>80%</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 10px"
+                >
+                  <div
+                    class="progress-bar text-bg-primary"
+                    style="width: 80%"
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
@@ -565,10 +572,10 @@
             data-cat-img="youtube"
             data-bs-toggle="modal"
             data-bs-target="#portfolioModal"
-            data-img-src="/images/works/1.png"
+            data-img-src="/assets/images/works/1.png"
           >
             <img
-              src="/images/works/1.png"
+              src="/assets/images/works/1.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
@@ -578,10 +585,10 @@
             data-cat-img="soundcloud"
             data-bs-toggle="modal"
             data-bs-target="#portfolioModal"
-            data-img-src="/images/works/5.png"
+            data-img-src="/assets/images/works/5.png"
           >
             <img
-              src="/images/works/5.png"
+              src="/assets/images/works/5.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
@@ -591,10 +598,10 @@
             data-cat-img="vimeo"
             data-bs-toggle="modal"
             data-bs-target="#portfolioModal"
-            data-img-src="/images/works/3.png"
+            data-img-src="/assets/images/works/3.png"
           >
             <img
-              src="/images/works/3.png"
+              src="/assets/images/works/3.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
@@ -604,10 +611,10 @@
             data-cat-img="popup"
             data-bs-toggle="modal"
             data-bs-target="#portfolioModal"
-            data-img-src="/images/works/1.png"
+            data-img-src="/assets/images/works/1.png"
           >
             <img
-              src="/images/works/1.png"
+              src="/assets/images/works/1.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
@@ -617,10 +624,10 @@
             data-cat-img="popup"
             data-bs-toggle="modal"
             data-bs-target="#portfolioModal"
-            data-img-src="/images/works/5.png"
+            data-img-src="/assets/images/works/5.png"
           >
             <img
-              src="/images/works/5.png"
+              src="/assets/images/works/5.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
@@ -630,10 +637,10 @@
             data-cat-img="details"
             data-bs-toggle="modal"
             data-bs-target="#portfolioModal"
-            data-img-src="/images/works/3.png"
+            data-img-src="/assets/images/works/3.png"
           >
             <img
-              src="/images/works/3.png"
+              src="/assets/images/works/3.png"
               class="w-100 align-middle mt-4"
               alt=""
             />
@@ -644,7 +651,7 @@
 
     <!-- Testimonials -->
     <section id="testimonials" class="container bg-supporting-extra-light">
-      <div class="swiper testimonialsSwiper p-2">
+      <div class="swiper testimonials-swiper p-2">
         <div class="d-md-flex justify-content-between align-items-center">
           <div class="col-md-8 col-xl-4">
             <p class="text-secondary fs-3 fw-bold">
@@ -690,8 +697,8 @@
             <div class="bg-light d-md-flex">
               <div class="d-none d-md-block w-50">
                 <img
-                  src="/images/testimonials/1.png"
-                  class="w-100 h-100"
+                  src="/assets/images/testimonials/1.png"
+                  class="w-100 h-100 object-fit-cover"
                   alt=""
                 />
               </div>
@@ -717,7 +724,7 @@
                 </p>
                 <div class="d-flex align-items-center pt-4">
                   <img
-                    src="/images/testimonials/1.png"
+                    src="/assets/images/testimonials/1.png"
                     class="circle-img-thumbnail me-3 d-md-none"
                     alt=""
                   />
@@ -740,8 +747,8 @@
             <div class="bg-light d-md-flex">
               <div class="d-none d-md-block w-50">
                 <img
-                  src="/images/testimonials/2.png"
-                  class="w-100 h-100"
+                  src="/assets/images/testimonials/2.png"
+                  class="w-100 h-100 object-fit-cover"
                   alt=""
                 />
               </div>
@@ -767,7 +774,7 @@
                 </p>
                 <div class="d-flex align-items-center pt-4">
                   <img
-                    src="/images/testimonials/1.png"
+                    src="/assets/images/testimonials/1.png"
                     class="circle-img-thumbnail me-3 d-md-none"
                     alt=""
                   />
@@ -790,8 +797,8 @@
             <div class="bg-light d-md-flex">
               <div class="d-none d-md-block w-50">
                 <img
-                  src="/images/testimonials/1.png"
-                  class="w-100 h-100"
+                  src="/assets/images/testimonials/1.png"
+                  class="w-100 h-100 object-fit-cover"
                   alt=""
                 />
               </div>
@@ -817,7 +824,7 @@
                 </p>
                 <div class="d-flex align-items-center pt-4">
                   <img
-                    src="/images/testimonials/1.png"
+                    src="/assets/images/testimonials/1.png"
                     class="circle-img-thumbnail me-3 d-md-none"
                     alt=""
                   />
@@ -840,8 +847,8 @@
             <div class="bg-light d-md-flex">
               <div class="d-none d-md-block w-50">
                 <img
-                  src="/images/testimonials/2.png"
-                  class="w-100 h-100"
+                  src="/assets/images/testimonials/2.png"
+                  class="w-100 h-100 object-fit-cover"
                   alt=""
                 />
               </div>
@@ -867,7 +874,7 @@
                 </p>
                 <div class="d-flex align-items-center pt-4">
                   <img
-                    src="/images/testimonials/1.png"
+                    src="/assets/images/testimonials/1.png"
                     class="circle-img-thumbnail me-3 d-md-none"
                     alt=""
                   />
@@ -911,7 +918,7 @@
               data-bs-target="#blogModal"
             >
               <div class="position-relative">
-                <img src="/images/blog/1.png" class="w-100" alt="" />
+                <img src="/assets/images/blog/1.png" class="w-100" alt="" />
                 <div
                   class="position-absolute top-0 end-0 bg-supporting-dark text-white p-2"
                 >
@@ -935,7 +942,7 @@
               data-bs-target="#blogModal"
             >
               <div class="position-relative">
-                <img src="/images/blog/2.png" class="w-100" alt="" />
+                <img src="/assets/images/blog/2.png" class="w-100" alt="" />
                 <div
                   class="position-absolute top-0 end-0 bg-supporting-dark text-white p-2"
                 >
@@ -959,7 +966,7 @@
               data-bs-target="#blogModal"
             >
               <div class="position-relative">
-                <img src="/images/blog/2.png" class="w-100" alt="" />
+                <img src="/assets/images/blog/2.png" class="w-100" alt="" />
                 <div
                   class="position-absolute top-0 end-0 bg-supporting-dark text-white p-2"
                 >
@@ -1065,7 +1072,11 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="">
-            <img src="/images/blog/2.png" class="w-100 rounded-top" alt="" />
+            <img
+              src="/assets/images/blog/2.png"
+              class="w-100 rounded-top"
+              alt=""
+            />
             <div class="position-absolute top-0 end-0 m-2 modal-close-btn">
               <i
                 class="bi bi-x-circle-fill fs-2 text-white"
@@ -1112,7 +1123,7 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <img src="/images/works/1.png" class="w-100 rounded" alt="" />
+          <img src="/assets/images/works/1.png" class="w-100 rounded" alt="" />
           <div class="position-absolute top-0 end-0 m-2 modal-close-btn">
             <i
               class="bi bi-x-circle-fill fs-2 text-white"
@@ -1125,7 +1136,7 @@
     </div>
 
     <!-- Swiper -->
-    <script src="/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
 
     <!-- Bootstrap -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -1133,6 +1144,6 @@
     <!-- AOS -->
     <script src="/node_modules/aos/dist/aos.js"></script>
 
-    <script src="/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

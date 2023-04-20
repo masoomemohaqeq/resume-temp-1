@@ -9,8 +9,8 @@ $font-size-base: 0.8rem;
 
 $shadow-custom-lg: 0 0 2.5rem rgba(0, 0, 0, 0.085);
 
-@import "../node_modules/bootstrap/scss/_functions";
-@import "../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
 
 $custom-font-sizes: (
   7: $font-size-base - 0.1,
@@ -138,7 +138,7 @@ $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 }
 
 // import bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 [data-bs-theme="dark"] {
   --bs-primary: $primary-dark;

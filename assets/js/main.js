@@ -1,7 +1,7 @@
 window.onload = function () {
   const docEl = document.documentElement;
 
-  new Swiper(".servicesSwiper", {
+  new Swiper(".services-swiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
@@ -24,7 +24,7 @@ window.onload = function () {
     },
   });
 
-  new Swiper(".testimonialsSwiper", {
+  new Swiper(".testimonials-swiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
