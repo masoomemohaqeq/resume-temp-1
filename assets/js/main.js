@@ -145,6 +145,7 @@ window.onload = function () {
       } else {
         docEl.setAttribute("data-bs-theme", "dark");
       }
+      navbar.check();
     });
   });
 };
